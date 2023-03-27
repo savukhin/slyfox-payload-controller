@@ -1,5 +1,13 @@
+project(lib_image_analyzer)
+
 set(SRC
-    ImageAnalyzer.cpp    
+    ImageAnalyzer.cpp
 )
 
-add_library(image_analyzer ${SRC})
+MESSAGE("Found cmake")
+
+# set(SRC )
+
+add_library(image_analyzer SHARED ${SRC})
+
+# include

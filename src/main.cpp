@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ImageAnalyzer.hpp"
+#include "ImageAnalyzer/ImageAnalyzer.hpp"
 
 int main(int argc, char** argv)
 {

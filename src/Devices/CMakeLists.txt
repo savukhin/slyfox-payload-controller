@@ -2,4 +2,4 @@ set(SRC
     Devices.cpp    
 )
 
-add_executable(devices ${SRC})
+add_library(devices ${SRC})

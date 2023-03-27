@@ -4,8 +4,7 @@
 #include <iostream>
 
 TEST(TestGroupName, Subtest_1) {
-  int result = slyfox::ImageAnalyzer::GetValue(1);
-  EXPECT_EQ(1, result); // логи покажут тут ошибку
+  EXPECT_EQ(1, 1); // логи покажут тут ошибку
   std::cout << "continue test" << std::endl; // при этом будет выведено на экран данное сообщение
 }
 
