@@ -1,0 +1,6 @@
+include_directories(Devices)
+include_directories(ImageAnalyzer)
+include_directories(SensorAnalyzer)
+include_directories(MovementController)
+
+add_executable(main main.cpp)
