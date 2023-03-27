@@ -1,9 +1,11 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include "ImageAnalyzer.hpp"
 #include <iostream>
 
 TEST(TestGroupName, Subtest_1) {
-  EXPECT_EQ(1, 2); // логи покажут тут ошибку
+  int result = slyfox::ImageAnalyzer::GetValue(1);
+  EXPECT_EQ(1, result); // логи покажут тут ошибку
   std::cout << "continue test" << std::endl; // при этом будет выведено на экран данное сообщение
 }
 

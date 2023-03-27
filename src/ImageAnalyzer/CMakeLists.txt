@@ -2,4 +2,4 @@ set(SRC
     ImageAnalyzer.cpp    
 )
 
-add_executable(image_analyzer ${SRC})
+add_library(image_analyzer ${SRC})

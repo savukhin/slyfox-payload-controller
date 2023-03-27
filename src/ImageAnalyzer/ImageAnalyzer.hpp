@@ -4,6 +4,7 @@ namespace slyfox {
     class ImageAnalyzer {
     public:
         ImageAnalyzer() = default;
-        stati
-    }
+
+        static int GetValue(int value);
+    };
 }
