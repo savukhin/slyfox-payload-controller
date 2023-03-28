@@ -4,10 +4,10 @@ set(SRC
     ImageAnalyzer.cpp
 )
 
-MESSAGE("Found cmake")
+set(MAIN_DEPENDENCIES
+    ${MAIN_DEPENDENCIES}
+    image_analyzer
+    PARENT_SCOPE
+)
 
-# set(SRC )
-
-add_library(image_analyzer SHARED ${SRC})
-
-# include
+add_library(image_analyzer STATIC ${SRC})
