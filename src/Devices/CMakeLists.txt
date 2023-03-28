@@ -1,5 +1,13 @@
+project(lib_image_analyzer)
+
 set(SRC
-    Devices.cpp    
+    Devices.cpp
 )
 
-add_library(devices ${SRC})
+set(MAIN_DEPENDENCIES
+    ${MAIN_DEPENDENCIES}
+    devices
+    PARENT_SCOPE
+)
+
+add_library(devices STATIC ${SRC})
