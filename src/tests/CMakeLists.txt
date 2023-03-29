@@ -18,6 +18,7 @@ add_library(GTest::GTest INTERFACE IMPORTED)
 target_link_libraries(GTest::GTest INTERFACE gtest_main)
 
 FILE(COPY img.png DESTINATION "${CMAKE_BINARY_DIR}/src/tests")
+FILE(COPY suitable_img.png DESTINATION "${CMAKE_BINARY_DIR}/src/tests")
 
 set(TEST_SRC 
   ImageAnalyzer.cpp

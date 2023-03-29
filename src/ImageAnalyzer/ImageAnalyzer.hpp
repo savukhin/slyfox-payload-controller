@@ -6,16 +6,9 @@
 #include <vector>
 
 namespace slyfox {
-    struct CameraPoint {
-        int x;
-        int y;
-    };
-
+    using CameraPoint = cv::Point;
     using CameraResolution = CameraPoint;
-
-    struct Clusters: public std::vector<CameraPoint> {
-        // std::vector<CameraPoint> points;
-    };
+    using Clusters = std::vector<CameraPoint>;
 
     class ImageAnalyzer {
     private:
@@ -26,6 +19,6 @@ namespace slyfox {
 
         static int GetValue(int value);
 
-        Clusters Analyze(int a);
+        Clusters Analyze(cv::Mat img_thresholded, int min_area=20, int max_area=100);
     };
 }
