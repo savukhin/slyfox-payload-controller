@@ -4,6 +4,7 @@ set (CMAKE_CXX_STANDARD 20)
 
 
 add_subdirectory(ImageAnalyzer)
+add_subdirectory(Crsf)
 # add_subdirectory(Devices)
 
 
