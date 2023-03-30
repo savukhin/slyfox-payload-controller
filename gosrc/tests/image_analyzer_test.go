@@ -2,6 +2,7 @@ package analyzers
 
 import (
 	"fmt"
+	"slyfox-payload-controller/analyzers"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -9,7 +10,7 @@ import (
 )
 
 func TestImageAnalyzer(t *testing.T) {
-	analyzer := NewImageAnalyzer(1000, 400000)
+	analyzer := analyzers.NewImageAnalyzer(1000, 400000)
 
 	t.Log("Testing grayscale img with several clusters")
 	{
