@@ -23,7 +23,7 @@ type Crsf struct {
 
 	onLinkUp func()
 	// onLinkDown             func()
-	onPacketChannels       func()
+	OnPacketChannels       func()
 	onShiftyByte           func(b uint8)
 	onPacketLinkStatistics func(ls *CrsfLinkStatistics)
 	onPacketGps            func(gpsSensor *CrsfSensorGps)
@@ -201,8 +201,8 @@ func (crsf *Crsf) packetChannelsPacked(p *CrsfHeader) error {
 	crsf.linkIsUp = true
 	crsf.lastChannelsPacket = uint32(time.Now().Unix())
 
-	if crsf.onPacketChannels != nil {
-		crsf.onPacketChannels()
+	if crsf.OnPacketChannels != nil {
+		crsf.OnPacketChannels()
 	}
 
 	return nil
