@@ -39,7 +39,7 @@ func main() {
 	motorX1Pin := utils.GetEnv("MOTOR_X1_PIN", "1")
 	motorX2Pin := utils.GetEnv("MOTOR_X2_PIN", "1")
 	motorY1Pin := utils.GetEnv("MOTOR_Y1_PIN", "1")
-	motorY2Pin := utils.GetEnv("MOTOR_Y1_PIN", "1")
+	motorY2Pin := utils.GetEnv("MOTOR_Y2_PIN", "1")
 
 	motorsX := devices.NewServoMotorPair(r, motorX1Pin, motorX2Pin)
 	motorsY := devices.NewServoMotorPair(r, motorY1Pin, motorY2Pin)
